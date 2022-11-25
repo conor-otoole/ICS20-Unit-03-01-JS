@@ -16,8 +16,17 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function calculates the area and the perimeter of rectangle.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function calculate() {
+  // input
+  const height = parseInt(document.getElementById("sample3").value);
+  const baseb = parseInt(document.getElementById("sample2").value);
+  const basea = parseInt(document.getElementById("sample1").value);
+
+  // process
+  const area = [(basea + baseb) / 2] * height;
+
+  // output
+  document.getElementById("area").innerHTML = "Area is:" + area + "cm²";
 }
