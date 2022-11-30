@@ -20,13 +20,13 @@ if (navigator.serviceWorker) {
  */
 function calculate() {
   // input
-  const height = parseInt(document.getElementById("sample3").value);
-  const baseb = parseInt(document.getElementById("sample2").value);
-  const basea = parseInt(document.getElementById("sample1").value);
+  const height = parseInt(document.getElementById("sample3").value)
+  const baseb = parseInt(document.getElementById("sample2").value)
+  const basea = parseInt(document.getElementById("sample1").value)
 
   // process
-  const area = [(basea + baseb) / 2] * height;
+  const area = [(basea + baseb) / 2] * height
 
   // output
-  document.getElementById("area").innerHTML = "Area is:" + area + "cm²";
+  document.getElementById("area").innerHTML = "Area is:" + area + "cm²"
 }
