@@ -20,9 +20,9 @@ if (navigator.serviceWorker) {
  */
 function calculate() {
   // input
-  const height = parseInt(document.getElementById("sample3").value)
-  const baseb = parseInt(document.getElementById("sample2").value)
-  const basea = parseInt(document.getElementById("sample1").value)
+  const height = parseInt(document.getElementById("height").value)
+  const baseb = parseInt(document.getElementById("bbase").value)
+  const basea = parseInt(document.getElementById("abase").value)
 
   // process
   const area = [(basea + baseb) / 2] * height
